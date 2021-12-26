@@ -6,7 +6,9 @@ import myEpicNft from './utils/MyEpicNFT.json';
 
 const TWITTER_HANDLE = 'Morkeeth';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
+// eslint-disable-next-line
 const OPENSEA_LINK = '';
+// eslint-disable-next-line
 const TOTAL_MINT_COUNT = 50;
 
 const CONTRACT_ADDRESS = "0x90287E9AC7A43309Dc43C67C042Bb8E16e70573b";
@@ -124,6 +126,7 @@ const App = () => {
 
   useEffect(() => {
     checkIfWalletIsConnected();
+    // eslint-disable-next-line
   }, [])
 
   const renderNotConnectedContainer = () => (
@@ -138,7 +141,7 @@ const App = () => {
       
     </button>
   )
-  
+  // eslint-disable-next-line
   const renderMintingUI = () => (
     <button onClick={askContractToMintNft} className="cta-button connect-wallet-button">
       Minting...
@@ -158,6 +161,7 @@ const App = () => {
           </p>
           {currentAccount === "" ? renderNotConnectedContainer() : renderMintUI()}
         </div>
+        
         <a href="https://testnets.opensea.io/collection/squarenft-zo3fh3g7v4/">🌊 View Collection on OpenSea
 </a>
         <div className="footer-container">
